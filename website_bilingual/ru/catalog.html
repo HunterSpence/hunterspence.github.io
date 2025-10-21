@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог — RU</title>
+  <meta name="description" content="Доступный, адаптивный каркас сайта.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="header">
+    <div class="container header-inner" role="navigation" aria-label="Global">
+      <div class="brand">Название сайта</div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Меню</button>
+      <nav id="primary-nav" data-open="false">
+        <ul><li><a href="/ru/index.html">Главная</a></li>
+<li><a href="/ru/about.html">О нас</a></li>
+<li><a href="/ru/catalog.html" aria-current="page">Каталог</a></li>
+<li><a href="/ru/detail.html">Карточка</a></li>
+<li><a href="/ru/contact.html">Контакты</a></li></ul>
+      </nav>
+      <div class="lang" aria-label="Language"><a href="/ru/catalog.html" aria-current="page">RU</a> | <a href="/en/catalog.html">EN</a></div>
+    </div>
+  </header>
+  <main id="main" class="container" tabindex="-1">
+    
+<section>
+  <h2>Избранное</h2>
+  <div class="grid cols-3">
+    <article class="card"><h3>Item 1</h3><p>Краткое описание.</p></article>
+    <article class="card"><h3>Item 2</h3><p>Краткое описание.</p></article>
+    <article class="card"><h3>Item 3</h3><p>Краткое описание.</p></article>
+  </div>
+</section>
+<section class="tabs" aria-label="Вкладки">
+  <div class="tablist" role="tablist" aria-label="Разделы">
+    <button role="tab" aria-controls="panel-1" id="tab-1" aria-selected="true" tabindex="0">Обзор</button>
+    <button role="tab" aria-controls="panel-2" id="tab-2" aria-selected="false" tabindex="-1">Функции</button>
+    <button role="tab" aria-controls="panel-3" id="tab-3" aria-selected="false" tabindex="-1">Доступность</button>
+  </div>
+  <div id="panel-1" role="tabpanel" aria-labelledby="tab-1" class="tabpanel" data-active="true">
+    <p>Каркас включает двуязычные страницы, адаптивную вёрстку и базовые компоненты.</p>
+  </div>
+  <div id="panel-2" role="tabpanel" aria-labelledby="tab-2" class="tabpanel" data-active="false">
+    <ul>
+      <li>Семантические области: header/nav/main/footer</li>
+      <li>Ссылка-пропуск и видимый фокус</li>
+      <li>JS с defer и небольшие компоненты</li>
+    </ul>
+  </div>
+  <div id="panel-3" role="tabpanel" aria-labelledby="tab-3" class="tabpanel" data-active="false">
+    <p>Клавиатурная поддержка и ARIA-состояния для вкладок и модалки.</p>
+  </div>
+</section>
+  </main>
+  <footer class="container"><p>© Ваше имя — Все права защищены.</p></footer>
+  <div class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" tabindex="-1">
+      <h2 id="modal-title">Пример модального окна</h2>
+      <p id="modal-desc">Текст модального окна для демонстрации. Нажмите ESC, чтобы закрыть.</p>
+      <button data-close-modal>Закрыть</button>
+    </div>
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

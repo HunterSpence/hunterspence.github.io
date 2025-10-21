@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — RU</title>
+  <meta name="description" content="Доступный, адаптивный каркас сайта.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="header">
+    <div class="container header-inner" role="navigation" aria-label="Global">
+      <div class="brand">Название сайта</div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Меню</button>
+      <nav id="primary-nav" data-open="false">
+        <ul><li><a href="/ru/index.html">Главная</a></li>
+<li><a href="/ru/about.html">О нас</a></li>
+<li><a href="/ru/catalog.html">Каталог</a></li>
+<li><a href="/ru/detail.html">Карточка</a></li>
+<li><a href="/ru/contact.html" aria-current="page">Контакты</a></li></ul>
+      </nav>
+      <div class="lang" aria-label="Language"><a href="/ru/contact.html" aria-current="page">RU</a> | <a href="/en/contact.html">EN</a></div>
+    </div>
+  </header>
+  <main id="main" class="container" tabindex="-1">
+    
+<section class="card">
+  <h1>Свяжитесь с нами</h1>
+  <div id="form-live" aria-live="polite" role="status" class="sr-only" style="position:absolute;left:-9999px;"></div>
+  <form id="contact-form" novalidate>
+    <label for="name">Имя</label>
+    <input id="name" name="name" required>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required placeholder="you@example.com">
+    <label for="message">Сообщение</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <p style="font-size:.9rem;color:var(--color-muted)">Все поля обязательны.</p>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+  </main>
+  <footer class="container"><p>© Ваше имя — Все права защищены.</p></footer>
+  <div class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" tabindex="-1">
+      <h2 id="modal-title">Пример модального окна</h2>
+      <p id="modal-desc">Текст модального окна для демонстрации. Нажмите ESC, чтобы закрыть.</p>
+      <button data-close-modal>Закрыть</button>
+    </div>
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

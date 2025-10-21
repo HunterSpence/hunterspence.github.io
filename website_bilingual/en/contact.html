@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — EN</title>
+  <meta name="description" content="Accessible, responsive site scaffold.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header-inner" role="navigation" aria-label="Global">
+      <div class="brand">Site Name</div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" data-open="false">
+        <ul><li><a href="/en/index.html">Home</a></li>
+<li><a href="/en/about.html">About</a></li>
+<li><a href="/en/catalog.html">Catalog</a></li>
+<li><a href="/en/detail.html">Detail</a></li>
+<li><a href="/en/contact.html" aria-current="page">Contact</a></li></ul>
+      </nav>
+      <div class="lang" aria-label="Language"><a href="/en/contact.html" aria-current="page">EN</a> | <a href="/ru/contact.html">RU</a></div>
+    </div>
+  </header>
+  <main id="main" class="container" tabindex="-1">
+    
+<section class="card">
+  <h1>Contact us</h1>
+  <div id="form-live" aria-live="polite" role="status" class="sr-only" style="position:absolute;left:-9999px;"></div>
+  <form id="contact-form" novalidate>
+    <label for="name">Name</label>
+    <input id="name" name="name" required>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required placeholder="you@example.com">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <p style="font-size:.9rem;color:var(--color-muted)">All fields are required.</p>
+    <button type="submit">Send</button>
+  </form>
+</section>
+  </main>
+  <footer class="container"><p>© Your Name — All rights reserved.</p></footer>
+  <div class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" tabindex="-1">
+      <h2 id="modal-title">Sample Modal</h2>
+      <p id="modal-desc">Modal body text for demonstration. Press ESC to close.</p>
+      <button data-close-modal>Close</button>
+    </div>
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
